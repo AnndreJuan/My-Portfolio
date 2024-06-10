@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<title>Anndre Juan</title>
+
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="hero_info">
+                <div class="hero_info_h1">
+                    <h1>Anndre Juan</h1>
+                </div>
+                <div class="hero_info_h2">
+                    <h2>DataScience and RPA Desenveloper</h2>
+                </div>
+                <div class="hero_info_p">
+                    <p>Innovation and technology are the keys<br>to transforming the future.</p>
+                </div>
+            </div>
+            <div class="hero_events">
+                <div class="hero_events_link active" id="link_about">
+                    <hr>
+                    <span>Sobre</span>
+                </div>
+                <div class="hero_events_link" id="link_experience">
+                    <hr>
+                    <span>Experiência</span>
+                </div>
+                <div class="hero_events_link" id="link_projects">
+                    <hr>
+                    <span>Projetos</span>
+                </div>
+            </div>
+            <div class="hero_links">
+                <a href="">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="send-outline"></ion-icon>
+                </a>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content_topic_about">
+                <p>Olá, meu nome é <span class="content_topic_about_l">Anndre Juan</span>, moro na Serra, Brasil-ES, e tenho um grande interesse em <span class="content_topic_about_l">Data Science</span>.<br> 
+                    Adoro mergulhar em dados, descobrir padrões e obter insights que podem transformar negócios e ajudar na tomada de decisões.<br><br> 
+                    Além disso, tenho uma paixão por RPA (Automação de Processos Robóticos). 
+                    Acho incrível como a automação pode tornar nosso trabalho mais eficiente, liberando tempo para focar em atividades mais estratégicas e criativas. 
+                    Estou sempre em busca de novas tecnologias e técnicas para melhorar meu conhecimento e habilidades.
+                </p>
+            <div class="content_topic_skills">
+                <div class="content_topic_img">
+                    <img src="anndre.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="content_topic_tecnologias">
+                
+            </div>
+            
+            <div class="content_topic_projetcs">
+                <div class="projetc">
+                    <div class="projetc_img">
+
+                    </div>
+                    <div class="project_content">
+                        
+
+                        <div class="project_content_ftr">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.hero_events_link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelectorAll('.hero_events_link').forEach(item => {
+                    item.classList.remove('active');
+                });
+                link.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
