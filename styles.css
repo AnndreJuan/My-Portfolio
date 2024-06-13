@@ -171,6 +171,7 @@ main {
         height: 200px;
         border-radius: 50%;
         box-shadow: 0px 5px 10px rgb(23, 23, 23);
+        transition: transform .2s ease;
     }
 
 .content_topic_projetcs {
@@ -248,5 +249,78 @@ main {
         }
 
         .projetc:hover .project_content_title {
-            color: aqua;
+            color: aquamarine;
         }
+
+.content_topic_experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 6rem;
+    }
+
+    .experience {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 0.8rem;
+        border-radius: 0.25rem;
+        gap: 1.5rem;
+        cursor: pointer;   
+    }
+
+    .experience_year {
+        display: flex;
+        width: 30%;
+    }
+
+    .experience_year span {
+        font-size: 0.85rem;
+        color: aquamarine;
+        text-transform: uppercase;
+    }
+
+    .experience_content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .experience_content_title {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-global);
+    }
+        
+    .experience_content_p {
+        text-align: left;
+        color: var(--color-global-2);
+    }
+
+    .experience_content_ftr {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .experience_content_ftr span {
+        font-size: 0.8rem;
+        text-transform: capitalize;
+        color: aquamarine;
+        border-radius: 36px;
+        padding: 2px 10px;
+        background-color: rgba(127, 255, 212, 0.1);
+    }
+
+    .experience:hover {
+        background: rgba(238, 238, 238, 0.1);
+        box-shadow: 0px 1px 1px rgba(23, 23, 23, 0.2);
+    }
+
+    .experience:hover .experience_content_title {
+        color: aquamarine;
+    }
