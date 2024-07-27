@@ -374,4 +374,19 @@ main {
         padding-bottom: 3rem;
         z-index: 1;
     }
+
+    .projetc_img {
+        display: flex;
+        width: 20%;
+        top: 0; 
+    }
+        
+    .projetc_img img {
+        width: 100px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 0.2rem;
+    }
+    
+
 }

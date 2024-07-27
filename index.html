@@ -183,15 +183,6 @@
 
         </section>
     </main>
-    <script>
-        document.querySelectorAll('.hero_events_link').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelectorAll('.hero_events_link').forEach(item => {
-                    item.classList.remove('active');
-                });
-                link.classList.add('active');
-            });
-        });
-    </script>
+    <script type="module" src="/script.js"></script>
 </body>
 </html>
