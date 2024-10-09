@@ -7,28 +7,26 @@ document.querySelectorAll('.hero_events_link').forEach(link => {
     });
 });
 
-// const heroLinks = document.querySelector('.hero_links');
-// const hero_events = document.querySelector('.hero_events');
-// const hero_info = document.querySelector('.hero_info');
+function activateLinkOnScroll() {
+    const sections = [
+        { id: 'container_about', linkId: 'link_about' },
+        { id: 'container_projects', linkId: 'link_experience' },
+        { id: 'container_experiences', linkId: 'link_projects' }
+    ];
 
-// function desativateScroll () {
-//     if (window.scrollY > 120) {
-//         heroLinks.style.display = 'none';
-//     } else {
-//         heroLinks.style.display = 'Flex';
-//     };
+    let currentSection = '';
 
-//     if (window.scrollY > 160) {
-//         hero_events.style.display = 'none';
-//     } else {
-//         hero_events.style.display = 'Flex';
-//     };
+    sections.forEach(section => {
+        const element = document.getElementById(section.id);
+        const rect = element.getBoundingClientRect();
+    
+        if (rect.top >= 0 && rect.top < window.innerHeight / 2) {currentSection = section.linkId;}
+    });
+    document.querySelectorAll('.hero_events_link').forEach(link => {link.classList.remove('active');});
+    if (currentSection) {
+        document.getElementById(currentSection).classList.add('active');
+    }
+}
 
-//     if (window.scrollY > 200) {
-//         hero_info.style.display = 'none';
-//     } else {
-//         hero_info.style.display = 'Flex';
-//     };
-// };
+window.addEventListener('scroll', activateLinkOnScroll);
 
-// window.addEventListener('scroll', desativateScroll);
